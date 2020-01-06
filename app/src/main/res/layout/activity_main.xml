@@ -1,0 +1,641 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Basic Information"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textSize="22sp"/>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:columnCount="2"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            android:rowCount="10">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Full_Name:" />
+
+            <EditText
+                android:id="@+id/full_Name"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Father's Name:" />
+
+            <EditText
+                android:id="@+id/FathersName"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mother's Name:" />
+
+            <EditText
+                android:id="@+id/mathername"
+                android:layout_width="250dp"
+                android:layout_height="30dp" />
+
+            <TextView
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:text="Mobile Number:" />
+
+            <EditText
+                android:id="@+id/mobno"
+                android:layout_width="250dp"
+                android:layout_height="30dp"
+                android:inputType="number" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date Of Birth:" />
+
+            <EditText
+                android:id="@+id/DateOfBirth"
+                android:layout_width="250dp"
+                android:layout_height="29dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Full Address" />
+
+            <EditText
+                android:id="@+id/Fulladdress"
+                android:layout_width="250dp"
+                android:layout_height="29dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="House No:" />
+
+            <EditText
+                android:id="@+id/Houseno"
+                android:layout_width="250dp"
+                android:layout_height="29dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nearest ladmark" />
+
+            <EditText
+                android:id="@+id/Nearestladmark"
+                android:layout_width="250dp"
+                android:layout_height="29dp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Village:" />
+
+            <EditText
+                android:id="@+id/village"
+                android:layout_width="250dp"
+                android:layout_height="29dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="District" />
+
+            <EditText
+                android:id="@+id/District"
+                android:layout_width="250dp"
+                android:layout_height="29dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="State:" />
+
+            <EditText
+                android:id="@+id/State"
+                android:layout_width="250dp"
+                android:layout_height="29dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pincode:" />
+
+            <EditText
+                android:id="@+id/Pincode"
+                android:layout_width="250dp"
+                android:layout_height="29dp" />
+
+        </GridLayout>
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Marital Staus:"
+        android:textStyle="bold"/>
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TableRow>
+            <CheckBox
+                android:id="@+id/Married"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:text="Married"/>
+
+            <CheckBox
+                android:id="@+id/unmarried"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="UnMarried"/>
+            <CheckBox
+                android:id="@+id/Divorced"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Divorced"/>
+            <CheckBox
+                android:id="@+id/Widow"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:text="Widow"/>
+        </TableRow>
+    </TableLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gender:"
+        android:layout_gravity="left"
+        android:textStyle="bold"/>
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radio_male"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:text="Male" />
+
+        <RadioButton
+            android:id="@+id/radio_female"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="Female" />
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="select the identity cards that you have(select all applicable):"
+        android:textStyle="bold"/>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+<TableRow>
+    <CheckBox
+        android:id="@+id/AdharCard"
+        android:layout_width="wrap_content"
+        android:layout_height="42dp"
+        android:text="Adhar Card" />
+    <CheckBox
+        android:id="@+id/Other"
+        android:layout_width="109dp"
+        android:layout_height="wrap_content"
+        android:text="Other" />
+    <CheckBox
+        android:id="@+id/NREGACard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NREGA Card" />
+
+</TableRow>
+        <TableRow>
+    <CheckBox
+        android:id="@+id/Passport"
+        android:layout_width="117dp"
+        android:layout_height="wrap_content"
+        android:text="Passport" />
+
+    <CheckBox
+        android:id="@+id/pancard"
+        android:layout_width="118dp"
+        android:layout_height="wrap_content"
+        android:text="PAN card " />
+
+    <CheckBox
+        android:id="@+id/RationCard"
+        android:layout_width="124dp"
+        android:layout_height="wrap_content"
+        android:text="Ration Card" />
+        </TableRow>
+    <TableRow>
+    <CheckBox
+        android:id="@+id/BPLcard"
+        android:layout_width="126dp"
+        android:layout_height="wrap_content"
+        android:text="BPL card" />
+
+    <CheckBox
+        android:id="@+id/DrivingLicense"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Driving License" />
+
+    <CheckBox
+        android:id="@+id/VoterCard"
+        android:layout_width="121dp"
+        android:layout_height="wrap_content"
+        android:text="Voter Card" />
+
+</TableRow>
+
+    </TableLayout>
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Highiest level education"/>
+    <EditText
+        android:id="@+id/education"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="education"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="How did you hear about this vocational training program ?(Select all applicable)"
+        android:textStyle="bold"/>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TableRow>
+            <CheckBox
+                android:id="@+id/Pradhan"
+                android:layout_width="wrap_content"
+                android:layout_height="42dp"
+                android:text="Pradhan" />
+            <CheckBox
+                android:id="@+id/other"
+                android:layout_width="109dp"
+                android:layout_height="wrap_content"
+                android:text="Other" />
+            <CheckBox
+                android:id="@+id/Friend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Friend" />
+
+        </TableRow>
+        <TableRow>
+            <CheckBox
+                android:id="@+id/CommunityMember"
+                android:layout_width="117dp"
+                android:layout_height="wrap_content"
+                android:text="Community Member" />
+
+            <CheckBox
+                android:id="@+id/SchoolTeacher"
+                android:layout_width="118dp"
+                android:layout_height="wrap_content"
+                android:text="School Teacher/Principal " />
+
+            <CheckBox
+                android:id="@+id/Poster"
+                android:layout_width="124dp"
+                android:layout_height="wrap_content"
+                android:text="Poster" />
+        </TableRow>
+        <TableRow>
+            <CheckBox
+                android:id="@+id/Internet"
+                android:layout_width="126dp"
+                android:layout_height="wrap_content"
+                android:text="Internet" />
+
+            <CheckBox
+                android:id="@+id/Advertisement"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Advertisement" />
+
+        </TableRow>
+    </TableLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Additional Information"/>
+    <EditText
+        android:id="@+id/EmailId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Email_Id"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Religion"
+        android:textStyle="bold"/>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TableRow>
+        <CheckBox
+            android:id="@+id/Hindu"
+            android:layout_width="wrap_content"
+            android:layout_height="42dp"
+            android:text="Hindu" />
+        <CheckBox
+            android:id="@+id/Muslim"
+            android:layout_width="109dp"
+            android:layout_height="wrap_content"
+            android:text="Muslim" />
+        <CheckBox
+            android:id="@+id/Sikh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Friend" />
+        <CheckBox
+            android:id="@+id/Christian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Christian" />
+
+    </TableRow>
+        <TableRow>
+            <CheckBox
+                android:id="@+id/Jain"
+                android:layout_width="wrap_content"
+                android:layout_height="42dp"
+                android:text="Jain" />
+            <CheckBox
+                android:id="@+id/Buddhist"
+                android:layout_width="109dp"
+                android:layout_height="wrap_content"
+                android:text="Buddhist" />
+            <CheckBox
+                android:id="@+id/Other2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </TableRow>
+    </TableLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Caste Category"
+        android:textStyle="bold"/>
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TableRow>
+        <CheckBox
+            android:id="@+id/General"
+            android:layout_width="wrap_content"
+            android:layout_height="42dp"
+            android:text="General" />
+        <CheckBox
+            android:id="@+id/OBC"
+            android:layout_width="109dp"
+            android:layout_height="wrap_content"
+            android:text="OBC" />
+        <CheckBox
+            android:id="@+id/SC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SC" />
+        <CheckBox
+            android:id="@+id/ST"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ST" />
+        <CheckBox
+            android:id="@+id/Other3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Other" />
+
+    </TableRow>
+    </TableLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Are you currently employed?"
+        android:textStyle="bold"/>
+   <TableLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+       <TableRow>
+           <CheckBox
+               android:id="@+id/Yes"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Yes"/>
+           <CheckBox
+               android:id="@+id/No"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="No"/>
+       </TableRow>
+    </TableLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="If answer to previous questions was yes,then what is current occupation"
+        android:textStyle="bold"/>
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TableRow>
+            <CheckBox
+                android:id="@+id/EmployeeAgricuture"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Employee Agricuture"/>
+            <CheckBox
+                android:id="@+id/Employee_nonAgricuture"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Employee non Agricuture"/>
+        </TableRow>
+        <TableRow>
+            <CheckBox
+                android:id="@+id/SelfEmployee_Agriculture"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Self Employee-Agriculture"/>
+            <CheckBox
+                android:id="@+id/SelfEmployee_nonAgriculture"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Self Employee-nonAgriculture"/>
+        </TableRow>
+        <TableRow>
+            <CheckBox
+                android:id="@+id/Unemployee"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Unemployee"/>
+            <CheckBox
+                android:id="@+id/Student"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Student"/>
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Would you like to share contact details of people who would be intersted in these course/center?"
+        android:textStyle="bold"
+        android:textSize="12sp"/>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp">
+        <TableRow>
+
+            <TextView
+                android:id="@+id/fullName"
+                android:layout_width="207dp"
+                android:layout_height="wrap_content"
+                android:text="Full Name"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/Mobilenos"
+                android:layout_width="207dp"
+                android:layout_height="39dp"
+                android:text="Mobile nos"
+                android:textStyle="bold"/>
+        </TableRow>
+            <TableRow>
+
+                <EditText
+                    android:id="@+id/refname"
+                    android:layout_width="207dp"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:id="@+id/refmob"
+                    android:layout_width="207dp"
+                    android:layout_height="wrap_content" />
+            </TableRow>
+            <TableRow>
+
+                <EditText
+                    android:id="@+id/refname1"
+                    android:layout_width="207dp"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:id="@+id/refmob1"
+                    android:layout_width="207dp"
+                    android:layout_height="wrap_content" />
+            </TableRow>
+            <TableRow>
+
+                <EditText
+                    android:id="@+id/refname2"
+                    android:layout_width="207dp"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:id="@+id/refmob2"
+                    android:layout_width="207dp"
+                    android:layout_height="wrap_content" />
+            </TableRow>
+       </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+            <TableRow
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                >
+                <Button
+                    android:id="@+id/Insert"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_column="1"
+                    android:text="Add"/>
+
+                <Button
+                    android:id="@+id/Delete"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_column="2"
+                    android:text="Delete"
+                    />
+
+                <Button
+                    android:id="@+id/Update"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_column="3"
+                    android:text="Modify"
+                    />
+
+            </TableRow>
+            <TableRow
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+                <Button
+                    android:id="@+id/View"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_column="1"
+                    android:text="View"
+
+                    />
+
+                <Button
+                    android:id="@+id/ViewAll"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_column="2"
+                    android:text="View All"
+                    />
+
+            </TableRow>
+
+        </TableLayout>
+</LinearLayout>
+</ScrollView>
+
